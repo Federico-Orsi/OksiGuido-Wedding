@@ -28,7 +28,7 @@ header {
 }
 
 .div1 {
-  height: 200px;
+  height: 250px;
   background-color: #ece7e3;
 }
 
@@ -55,7 +55,7 @@ header {
   color: black;
   font-family: "Comforter Brush", sans-serif;
   width: 100%;
-  padding-top: 6%;
+  padding-top: 10%;
 }
 
 #Capa_1 {
