@@ -5,7 +5,7 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
 }
 
 header {
@@ -35,14 +35,14 @@ header {
 .div1 {
   height: 250px;
   background-color: #ece7e3;
-  width: 100%;
+  width: 100vw;
 }
 
 #div2 {
   height: 400px;
   background-color: #fff;
   text-align: center;
-  width: 100%;
+  width: 100vw;
 }
 
 #fotoPlaya {
@@ -71,4 +71,10 @@ header {
   height: 113px;
   bottom: 25px;
   right: -121px;
+}
+
+#countdownContainer {
+  background-color: black;
+  height: 265px;
+  width: 100vw;
 }/*# sourceMappingURL=style.css.map */

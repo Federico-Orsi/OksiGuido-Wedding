@@ -5,7 +5,7 @@
   }
 
  body{
-  width: 100%;
+  width: 100vw;
  }
 
 
@@ -47,14 +47,14 @@ header{
 .div1{
 height: 250px;
 background-color:#ece7e3;
-width: 100%;
+width: 100vw;
 }
 
 #div2{
   height: 400px;
   background-color: #fff;
   text-align: center;
-  width: 100%;
+  width: 100vw;
   }
 
   #fotoPlaya{
@@ -84,4 +84,12 @@ width: 100%;
   bottom: 25px;
     right: -121px;
   
+}
+
+// CountDown Date
+
+#countdownContainer{
+  background-color: black;
+  height: 265px;
+  width: 100vw;
 }
