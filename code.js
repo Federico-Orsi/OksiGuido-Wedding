@@ -21,14 +21,19 @@ diasRestantes,
 console.log(calcularTiempoRestante('Nov 05 2022 18:00:00 GMT-0300'));
 
 // Mostrar CountDown en Pantalla
-let countdownContainer = document.getElementById("countdownContainer");
+let countdownDias = document.getElementById("countdownDias");
+let countdownHoras = document.getElementById("countdownHoras");
+let countdownMinutos = document.getElementById("countdownMinutos");
+let countdownSegundos = document.getElementById("countdownSegundos");
 
 const showCountDown = (deadLine) => {
 
 const timer = setInterval(() => {
 tiempo = calcularTiempoRestante(deadLine);
-countdownContainer.innerHTML = `${tiempo.diasRestantes} ${tiempo.horasRestantes} ${tiempo.minutosRestantes} ${tiempo.segundosRestantes}`;
-countdownContainer.style.color = "white";
+countdownDias.innerHTML = `${tiempo.diasRestantes}`;
+countdownHoras.innerHTML = `${tiempo.horasRestantes}`;
+countdownMinutos.innerHTML = `${tiempo.minutosRestantes}`;
+countdownSegundos.innerHTML = `${tiempo.segundosRestantes}`;
 
 if(tiempo.tiempoRestante <= 1){
     clearInterval(timer);
