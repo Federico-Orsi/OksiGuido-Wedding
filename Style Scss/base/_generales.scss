@@ -40,7 +40,7 @@ header{
   padding-top: 12%;
   position: absolute;
   font-size: xx-large;
-  top: -30px;
+  top: -32px;
     left: 172px;
 }
 
@@ -78,11 +78,13 @@ width: 100vw;
 }
 
 #Capa_1{
+  overflow:none;
   position: absolute;
-  width: 100%;
+  width: fit-content;
   height: 113px;
   bottom: 25px;
-    right: -121px;
+    right:3px;
+   
   
 }
 
@@ -122,4 +124,46 @@ width: 100vw;
 
 #pDias{
   margin-left: -28%;
+}
+
+// Seccion Foto Fiesta, Horario y Mapa
+
+#divFiestaWhite{
+  height: 170px;
+  width: 100%;
+  background-color: #fff;
+}
+
+#divFiestaGray{
+  height: 400px;
+  width: 100%;
+  background-color:#ece7e3;
+}
+
+#seccionFiesta{
+  position: relative;
+}
+
+#yatchClubPic{
+  position: absolute;
+  top: 11%;
+    left: 24%;
+}
+
+#pFiesta{
+  font-family: 'Comforter Brush', sans-serif;
+  font-size: xxx-large;
+  padding-top: 38%;
+}
+
+#pOrganizador{
+  font-family:'Times New Roman', Times, serif;
+  font-size: medium;
+  
+}
+
+#pHorario{
+  font-family:'Times New Roman', Times, serif;
+  font-size: larger;
+  
 }
