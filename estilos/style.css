@@ -148,4 +148,15 @@ header {
 #pHorario {
   font-family: "Times New Roman", Times, serif;
   font-size: larger;
+}
+
+.info {
+  background-color: black;
+  color: #fff;
+  border-radius: 26px;
+  text-decoration: none;
+  padding: 2% 5%;
+}
+.info:hover {
+  color: rgb(241, 241, 133);
 }/*# sourceMappingURL=style.css.map */

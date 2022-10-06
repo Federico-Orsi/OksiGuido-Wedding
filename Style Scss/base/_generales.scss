@@ -168,3 +168,15 @@ width: 100vw;
   font-size: larger;
   
 }
+
+.info{
+  background-color: black;
+  color:#fff;
+  border-radius: 26px;
+  text-decoration: none;
+  padding: 2% 5%;
+
+  &:hover{
+    color: rgb(241, 241, 133);
+}
+}
