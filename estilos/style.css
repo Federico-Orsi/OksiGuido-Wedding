@@ -191,4 +191,53 @@ header {
   margin-right: 17%;
   padding: 1%;
   font-weight: 200;
+  letter-spacing: 3px;
+}
+
+#divMesaDeRegalos {
+  background-color: black;
+  height: 517px;
+  padding: 14%;
+}
+
+#articleFlor {
+  position: relative;
+}
+
+#imgFlor {
+  position: absolute;
+  height: 23%;
+  width: 29%;
+  left: 71%;
+  top: 28%;
+}
+
+#h5MesaRegalos {
+  font-family: "Comforter Brush", sans-serif;
+  font-size: 69px;
+  padding-top: 10%;
+  margin-bottom: 1rem;
+}
+
+#divDatosBancarios {
+  margin-left: 4%;
+}
+#divDatosBancarios:hover {
+  cursor: pointer;
+}
+
+#spanDatosBancarios {
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+#spanDesplegable {
+  padding-left: 35%;
+  padding-right: 7%;
+  padding-top: 1%;
+}
+
+#cbu {
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */

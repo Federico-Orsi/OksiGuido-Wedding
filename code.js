@@ -44,3 +44,32 @@ if(tiempo.tiempoRestante <= 1){
 
 
 showCountDown('Nov 05 2022 18:00:00 GMT-0300');
+
+
+// Mostrar CBU en Seccion Regalos:
+
+let cbu = document.getElementById("cbu");
+let divDatosBancarios = document.getElementById("divDatosBancarios");
+let spanDesplegable = document.getElementById("spanDesplegable");
+
+const mostrarCbu = () => {
+
+divDatosBancarios.onclick = () =>{
+
+    cbu.innerHTML = "CBU 0720037388000012330672"
+    cbu.style.color = "white"
+    
+    spanDesplegable.innerHTML = `<strong>-</strong>`;
+    ocultarCbu();    
+} 
+}
+
+mostrarCbu();
+
+const ocultarCbu = () =>{
+    divDatosBancarios.onclick = () =>{
+      cbu.innerHTML = "";
+      spanDesplegable.innerHTML = `<strong>+</strong>`;
+      mostrarCbu();
+    }
+}
