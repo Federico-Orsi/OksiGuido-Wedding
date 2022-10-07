@@ -369,3 +369,48 @@ left:32%;
   width: 97%;
     align-self: center;
 }
+
+// Seccion Confirmacion
+
+#divConfirmacion{
+  background-color:#ece7e3;
+    height: 750px;
+    padding: 14%;
+    color: black;
+}
+
+#h5Confirmacion{
+  font-family: 'Comforter Brush', sans-serif ;
+  font-size: 69px;
+  margin-bottom: 2.5rem;
+}
+
+#imgFlorConfirmacion{
+  position: absolute;
+  height: 30%;
+    width: 48%;
+    bottom: -85px;
+    left: -34px;
+}
+
+.posRelative-FO{
+  position: relative;
+}
+
+// Seccion Te Esperamos (Mje final)
+#divTeEsperamos{
+  background-color: black;
+  height: 220px;
+  padding: 15%;
+}
+
+#h5TeEsperamos{
+  font-family: 'Comforter Brush', sans-serif ;
+  font-size: 69px;
+  margin-bottom: 2.5rem;
+  color: #fff;
+}
+
+.whiteColor-FO{
+  color: #fff;
+}
