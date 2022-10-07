@@ -80,25 +80,30 @@ let mujeres = document.getElementById("mujeres");
 let divFotosHombres = document.getElementById("divFotosHombres");
 let divFotosMujeres = document.getElementById("divFotosMujeres");
 
+const mostrarVestimentaMujeres = () => {
+    mujeres.onclick = () =>{
+     divFotosHombres.innerHTML = "";
+     divFotosMujeres.innerHTML = `
+     <img id="imgMujer1" src="./img/elegante-sport-woman.jpg" alt="woman">
+     <img id="imgMujer2" src="./img/elegante-sport-women.jpg" alt="women">
+      `;
+      
+    }
+    
+    }
+
 const mostrarVestimentaHombres = () => {
 hombres.onclick = () =>{
+  divFotosMujeres.innerHTML = "";
   divFotosHombres.innerHTML = `
   <img id="imgHombre1" src="./img/elegante-sportHombre.jpg" alt="hombre">
   <img id="imgHombre2" src="./img/elegante-sportHombres.jpg" alt="hombres">
   `;
-  mostrarVestimentaMujeres();
+  
 }
 
 }
 
 mostrarVestimentaHombres();
+mostrarVestimentaMujeres();
 
-
-const mostrarVestimentaMujeres = () => {
-    mujeres.onclick = () =>{
-      divFotosHombres.innerHTML = `
-      
-      `;
-    }
-    
-    }

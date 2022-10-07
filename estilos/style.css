@@ -326,4 +326,20 @@ header {
 
 #divFotosHombres {
   flex-direction: column;
+}
+
+#divFotosMujeres {
+  flex-direction: column;
+}
+
+#imgMujer1 {
+  width: 44%;
+  margin-bottom: 3%;
+  align-self: center;
+  margin-left: 9%;
+}
+
+#imgMujer2 {
+  width: 97%;
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */
