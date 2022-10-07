@@ -266,3 +266,90 @@ width: 100vw;
 #cbu{
   background-color: black;
 }
+
+// Seccion Vestimenta:
+
+#divVestimenta{
+  height: 300px;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+#ejemploVestimenta{
+  background-color: black;
+    color: #fff;
+    border-radius: 26px;
+    width: fit-content;
+    align-self: center;
+    padding: 2% 5%;
+    &:hover{
+      color: rgb(241, 241, 133);
+      cursor: pointer;
+  }
+}
+
+#pEleganteSport{
+  background-color: #ece7e3;
+  margin-left: 13%;
+    margin-right: 17%;
+    padding: 1%;
+}
+
+#exampleModalLabel{
+position: absolute;
+left:32%;
+}
+
+.modal-header{
+  position: relative;
+}
+
+.btn-close{
+  margin-left: 94%;
+}
+
+.fs-Smaller-FO{
+  font-size: smaller;
+}
+
+.after{
+  position: relative;
+  width: fit-content;
+  
+}
+
+.after:hover{
+    
+  cursor: pointer;
+   
+  &:after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  }
+}
+
+.borderBottom-FO:hover{
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+#imgHombre1{
+  width: 44%;
+  margin-bottom: 3%;
+  align-self: center;
+}
+
+#imgHombre2{
+  width: 97%;
+    align-self: center;
+}
+
+#divFotosHombres{
+  flex-direction: column;
+}
