@@ -369,6 +369,26 @@ header {
   position: relative;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+#botonSubmit {
+  background-color: black;
+  color: #fff;
+  border-radius: 26px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2% 5%;
+}
+#botonSubmit:hover {
+  color: rgb(241, 241, 133);
+}
+
 #divTeEsperamos {
   background-color: black;
   height: 220px;

@@ -397,6 +397,28 @@ left:32%;
   position: relative;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+  appearance: none;
+  margin: 0;
+ }
+  
+#botonSubmit{
+  background-color: black;
+    color: #fff;
+    border-radius: 26px;
+    
+    width: fit-content;
+    
+    padding: 2% 5%;
+    &:hover{
+      color: rgb(241, 241, 133);
+      
+}
+}
+
+
+
 // Seccion Te Esperamos (Mje final)
 #divTeEsperamos{
   background-color: black;
