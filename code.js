@@ -107,3 +107,54 @@ hombres.onclick = () =>{
 mostrarVestimentaHombres();
 mostrarVestimentaMujeres();
 
+
+// fetch (Post) al hacer el Submit:
+
+// Varibles:
+let formulario = document.getElementById("formulario");
+let Nombre = document.getElementById("Nombre");
+let Apellido = document.getElementById("Apellido");
+let Email = document.getElementById("Email");
+let Celular = document.getElementById("Celular");
+let Edad = document.getElementById("Edad");
+let Menu = document.getElementById("Menu");
+let Asistencia = document.getElementById("Asistencia");
+let mensajeParaNovios = document.getElementById("mensajeParaNovios");
+
+
+
+formulario.onsubmit = (e) =>{
+  e.preventDefault(); 
+
+fetch("https://formsubmit.co/ajax/federicoantonio.orsi@gmail.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        Nombre: Nombre.value,
+        Apellido: Apellido.value,
+        Email: Email.value,
+        Celular: Celular.value,
+        Edad: Edad.value,
+        Menu: Menu.value,
+        Asistencia: Asistencia.value,
+        mensajeParaNovios: mensajeParaNovios.value,
+    })
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+   
+    Swal.fire({
+      icon: 'success',
+      title: 'Gracias ' + Nombre.value + ', tus datos se enviaron correctamente a los Novios!!',
+      // text: 'Ahora podes elegir tu Forma de Pago más Conveniente.',
+      
+    })
+
+   formulario.reset();
+   
+  }
+
+  
