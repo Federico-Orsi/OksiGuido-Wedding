@@ -126,6 +126,8 @@ let mensajeParaNovios = document.getElementById("mensajeParaNovios");
 formulario.onsubmit = (e) =>{
   e.preventDefault(); 
 
+  if ((Edad.value != "Edad") && (Menu.value != "Tipo de Menú") && (Asistencia.value != "Asistencia")){
+
 fetch("https://formsubmit.co/ajax/federicoantonio.orsi@gmail.com",
  {
     method: "POST",
@@ -178,5 +180,14 @@ fetch("https://formsubmit.co/ajax/federicoantonio.orsi@gmail.com",
    formulario.reset();
    
   }
-
+  else {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Por favor debes elegir una Opción en todos los Campos Seleccionables. Gracias!!',
+        
+      })
+      
+  }
+}
   
