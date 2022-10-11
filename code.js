@@ -126,7 +126,8 @@ let mensajeParaNovios = document.getElementById("mensajeParaNovios");
 formulario.onsubmit = (e) =>{
   e.preventDefault(); 
 
-fetch("https://formsubmit.co/ajax/federicoantonio.orsi@gmail.com", {
+fetch("https://formsubmit.co/ajax/federicoantonio.orsi@gmail.com",
+ {
     method: "POST",
     headers: { 
         'Content-Type': 'application/json',
@@ -146,6 +147,27 @@ fetch("https://formsubmit.co/ajax/federicoantonio.orsi@gmail.com", {
     .then(response => response.json())
     .then(data => console.log(data))
    
+    fetch("https://formsubmit.co/ajax/lucasrodrigo.orsi@gmail.com",
+    {
+       method: "POST",
+       headers: { 
+           'Content-Type': 'application/json',
+           'Accept': 'application/json'
+       },
+       body: JSON.stringify({
+           Nombre: Nombre.value,
+           Apellido: Apellido.value,
+           Email: Email.value,
+           Celular: Celular.value,
+           Edad: Edad.value,
+           Menu: Menu.value,
+           Asistencia: Asistencia.value,
+           mensajeParaNovios: mensajeParaNovios.value,
+       })
+   })
+       .then(response => response.json())
+       .then(data => console.log(data))
+
     Swal.fire({
       icon: 'success',
       title: 'Gracias ' + Nombre.value + ', tus datos se enviaron correctamente a los Novios!!',
