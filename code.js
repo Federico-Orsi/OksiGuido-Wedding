@@ -18,7 +18,6 @@ diasRestantes,
 
 }
 
-console.log(calcularTiempoRestante('Nov 05 2022 18:00:00 GMT-0300'));
 
 // Mostrar CountDown en Pantalla
 let countdownDias = document.getElementById("countdownDias");
@@ -37,75 +36,79 @@ countdownSegundos.innerHTML = `${tiempo.segundosRestantes}`;
 
 if(tiempo.tiempoRestante <= 1){
     clearInterval(timer);
+    countdownDias.innerHTML = "00" ;
+    countdownHoras.innerHTML = "00" ;
+    countdownMinutos.innerHTML = "00" ;
+    countdownSegundos.innerHTML = "00" ;
 }
 },1000)    
 
 }
 
 
-showCountDown('Nov 05 2022 18:00:00 GMT-0300');
+showCountDown('Jan 31 2023 21:00:00 GMT-0300');
 
 
 // Mostrar CBU en Seccion Regalos:
 
-let cbu = document.getElementById("cbu");
-let divDatosBancarios = document.getElementById("divDatosBancarios");
-let spanDesplegable = document.getElementById("spanDesplegable");
+// let cbu = document.getElementById("cbu");
+// let divDatosBancarios = document.getElementById("divDatosBancarios");
+// let spanDesplegable = document.getElementById("spanDesplegable");
 
-const mostrarCbu = () => {
+// const mostrarCbu = () => {
 
-divDatosBancarios.onclick = () =>{
+// divDatosBancarios.onclick = () =>{
 
-    cbu.innerHTML = "CBU 0720037388000012330672"
-    cbu.style.color = "white"
+//     cbu.innerHTML = "CBU 0720037388000012330672"
+//     cbu.style.color = "white"
     
-    spanDesplegable.innerHTML = `<strong>-</strong>`;
-    ocultarCbu();    
-} 
-}
+//     spanDesplegable.innerHTML = `<strong>-</strong>`;
+//     ocultarCbu();    
+// } 
+// }
 
-mostrarCbu();
+// mostrarCbu();
 
-const ocultarCbu = () =>{
-    divDatosBancarios.onclick = () =>{
-      cbu.innerHTML = "";
-      spanDesplegable.innerHTML = `<strong>+</strong>`;
-      mostrarCbu();
-    }
-}
+// const ocultarCbu = () =>{
+//     divDatosBancarios.onclick = () =>{
+//       cbu.innerHTML = "";
+//       spanDesplegable.innerHTML = `<strong>+</strong>`;
+//       mostrarCbu();
+//     }
+// }
 
 //Vestimenta
-let hombres = document.getElementById("hombres");
-let mujeres = document.getElementById("mujeres");
-let divFotosHombres = document.getElementById("divFotosHombres");
-let divFotosMujeres = document.getElementById("divFotosMujeres");
+// let hombres = document.getElementById("hombres");
+// let mujeres = document.getElementById("mujeres");
+// let divFotosHombres = document.getElementById("divFotosHombres");
+// let divFotosMujeres = document.getElementById("divFotosMujeres");
 
-const mostrarVestimentaMujeres = () => {
-    mujeres.onclick = () =>{
-     divFotosHombres.innerHTML = "";
-     divFotosMujeres.innerHTML = `
-     <img id="imgMujer1" src="./img/elegante-sport-woman.jpg" alt="woman">
-     <img id="imgMujer2" src="./img/elegante-sport-women.jpg" alt="women">
-      `;
+// const mostrarVestimentaMujeres = () => {
+//     mujeres.onclick = () =>{
+//      divFotosHombres.innerHTML = "";
+//      divFotosMujeres.innerHTML = `
+//      <img id="imgMujer1" src="./img/elegante-sport-woman.jpg" alt="woman">
+//      <img id="imgMujer2" src="./img/elegante-sport-women.jpg" alt="women">
+//       `;
       
-    }
+//     }
     
-    }
+//     }
 
-const mostrarVestimentaHombres = () => {
-hombres.onclick = () =>{
-  divFotosMujeres.innerHTML = "";
-  divFotosHombres.innerHTML = `
-  <img id="imgHombre1" src="./img/elegante-sportHombre.jpg" alt="hombre">
-  <img id="imgHombre2" src="./img/elegante-sportHombres.jpg" alt="hombres">
-  `;
+// const mostrarVestimentaHombres = () => {
+// hombres.onclick = () =>{
+//   divFotosMujeres.innerHTML = "";
+//   divFotosHombres.innerHTML = `
+//   <img id="imgHombre1" src="./img/elegante-sportHombre.jpg" alt="hombre">
+//   <img id="imgHombre2" src="./img/elegante-sportHombres.jpg" alt="hombres">
+//   `;
   
-}
+// }
 
-}
+// }
 
-mostrarVestimentaHombres();
-mostrarVestimentaMujeres();
+// mostrarVestimentaHombres();
+// mostrarVestimentaMujeres();
 
 
 // fetch (Post) al hacer el Submit:
@@ -118,6 +121,7 @@ let Email = document.getElementById("Email");
 let Celular = document.getElementById("Celular");
 let Edad = document.getElementById("Edad");
 let Menu = document.getElementById("Menu");
+let Transporte = document.getElementById("Transporte");
 let Asistencia = document.getElementById("Asistencia");
 let mensajeParaNovios = document.getElementById("mensajeParaNovios");
 
@@ -126,7 +130,7 @@ let mensajeParaNovios = document.getElementById("mensajeParaNovios");
 formulario.onsubmit = (e) =>{
   e.preventDefault(); 
 
-  if ((Edad.value != "Edad") && (Menu.value != "Tipo de Menú") && (Asistencia.value != "Asistencia")){
+  if ((Edad.value != "Edad") && (Menu.value != "Tipo de Menú") && (Asistencia.value != "Asistencia") && (Transporte.value != "Transporte")){
 
 fetch("https://formsubmit.co/ajax/federicoantonio.orsi@gmail.com",
  {
@@ -142,14 +146,15 @@ fetch("https://formsubmit.co/ajax/federicoantonio.orsi@gmail.com",
         Celular: Celular.value,
         Edad: Edad.value,
         Menu: Menu.value,
+        Transporte: Transporte.value,
         Asistencia: Asistencia.value,
-        mensajeParaNovios: mensajeParaNovios.value,
+        MensajeParaLosNovios: mensajeParaNovios.value,
     })
 })
     .then(response => response.json())
     .then(data => console.log(data))
    
-    fetch("https://formsubmit.co/ajax/camisolguerra@gmail.com",
+    fetch("https://formsubmit.co/ajax/oksteel12@gmail.com",
     {
        method: "POST",
        headers: { 
@@ -163,8 +168,9 @@ fetch("https://formsubmit.co/ajax/federicoantonio.orsi@gmail.com",
            Celular: Celular.value,
            Edad: Edad.value,
            Menu: Menu.value,
+           Transporte: Transporte.value,
            Asistencia: Asistencia.value,
-           mensajeParaNovios: mensajeParaNovios.value,
+           MensajeParaLosNovios: mensajeParaNovios.value,
        })
    })
        .then(response => response.json())

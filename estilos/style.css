@@ -17,7 +17,7 @@ header {
   position: relative;
   width: 100%;
   height: 106px;
-  background-color: black;
+  background-color: #fff;
 }
 
 .tituloNombres {
@@ -35,7 +35,7 @@ header {
 
 .div1 {
   height: 250px;
-  background-color: #ece7e3;
+  background-color: #fff;
   width: 100vw;
 }
 
@@ -44,25 +44,27 @@ header {
   background-color: #fff;
   text-align: center;
   width: 100vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #fotoPlaya {
   position: absolute;
-  left: 56px;
-  top: 64px;
-  max-height: 75%;
-  width: 71%;
+  left: -2px;
+  top: -31px;
+  width: 100%;
+  height: 790px;
 }
 
 #pFecha {
   text-decoration: none;
   position: absolute;
-  bottom: 37px;
-  left: -6px;
+  bottom: -87px;
+  left: -12px;
   font-size: xxx-large;
   background-color: #fff;
   color: black;
-  font-family: "Comforter Brush", sans-serif;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 600;
   width: 100%;
   padding-top: 10%;
 }
@@ -74,17 +76,29 @@ header {
   width: -moz-fit-content;
   width: fit-content;
   height: 113px;
-  bottom: 25px;
+  bottom: -51px;
   right: 3px;
 }
 
-#divCountDown {
+#divCountDownC {
   background-color: black;
   height: 265px;
   width: 100vw;
   color: #fff;
-  padding-top: 23%;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 36%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 13%;
+  font-size: larger;
+}
+
+.countDownFlexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #countdownContainer {
@@ -94,6 +108,7 @@ header {
 
 #divTiempoRestanteEnNumeros {
   font-size: xx-large;
+  font-weight: 400;
 }
 
 .estilosCountdown {
@@ -101,16 +116,9 @@ header {
 }
 
 #divDiasHoras {
-  margin-left: -2%;
-  font-weight: 100;
-}
-
-#pSegundos {
-  margin-left: 35%;
-}
-
-#pDias {
-  margin-left: -28%;
+  margin-left: -14%;
+  font-weight: 300;
+  position: relative;
 }
 
 #divFiestaWhite {
@@ -131,20 +139,22 @@ header {
 
 #yatchClubPic {
   position: absolute;
-  top: 7%;
-  left: 22%;
-  width: 60%;
+  top: 12%;
+  left: 12%;
+  width: 77%;
 }
 
 #pFiesta {
-  font-family: "Comforter Brush", sans-serif;
-  font-size: xxx-large;
+  font-family: "Bodoni Moda", serif;
+  font-size: 32px;
+  font-weight: 500;
   padding-top: 40%;
 }
 
 #pOrganizador {
-  font-family: "Times New Roman", Times, serif;
-  font-size: medium;
+  font-family: "Bodoni Moda", serif;
+  font-size: larger;
+  font-weight: 600;
 }
 
 #pHorario {
@@ -163,11 +173,19 @@ header {
   color: rgb(241, 241, 133);
 }
 
+.info-position {
+  POSITION: ABSOLUTE;
+  bottom: -112px;
+  right: 158px;
+}
+
 #divMuralFotos {
-  height: 302px;
+  height: 440px;
   width: 100%;
   background-color: #fff;
   flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  padding: 14%;
 }
 
 .aMuralFotos {
@@ -186,12 +204,16 @@ header {
   color: rgb(241, 241, 133);
 }
 
+.fWeight400 {
+  font-weight: 400;
+}
+
 #pCamiYFede {
   background-color: #ece7e3;
   margin-left: 13%;
   margin-right: 17%;
   padding: 1%;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 3px;
 }
 
@@ -207,10 +229,10 @@ header {
 
 #imgFlor {
   position: absolute;
-  height: 23%;
-  width: 29%;
-  left: 71%;
-  top: 28%;
+  height: 59%;
+  width: 25%;
+  left: 75%;
+  top: 7%;
 }
 
 #h5MesaRegalos {
@@ -345,17 +367,47 @@ header {
   align-self: center;
 }
 
+#Nombre {
+  width: 100%;
+}
+
+#Edad {
+  text-align: center;
+  height: 32px;
+}
+
+#Menu {
+  text-align: center;
+  height: 32px;
+}
+
+#Transporte {
+  text-align: center;
+  height: 32px;
+}
+
+#Asistencia {
+  text-align: center;
+  height: 32px;
+}
+
+.monserrat400 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
 #divConfirmacion {
   background-color: #ece7e3;
-  height: 750px;
+  height: 505px;
   padding: 14%;
   color: black;
 }
 
 #h5Confirmacion {
-  font-family: "Comforter Brush", sans-serif;
-  font-size: 69px;
-  margin-bottom: 2.5rem;
+  font-size: 44px;
+  font-family: "Bodoni Moda", serif;
+  margin-bottom: 10%;
+  font-weight: 600;
 }
 
 #imgFlorConfirmacion {
@@ -393,7 +445,11 @@ input[type=number]::-webkit-outer-spin-button {
 #divTeEsperamos {
   background-color: black;
   height: 220px;
-  padding: 15%;
+  padding: 13%;
+}
+
+.heart {
+  padding-bottom: 3%;
 }
 
 #h5TeEsperamos {
@@ -405,4 +461,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 .whiteColor-FO {
   color: #fff;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  #fotoPlaya {
+    position: absolute;
+    left: 175px;
+    top: -31px;
+    width: 65%;
+    height: 790px;
+  }
 }/*# sourceMappingURL=style.css.map */

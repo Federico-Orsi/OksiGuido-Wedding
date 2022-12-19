@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comforter+Brush">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script:wght@700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Comforter+Brush&family=Dancing+Script:wght@700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./estilos/style.css">
     <title>Invitación Digital</title>
 </head>
@@ -13,14 +14,15 @@
    
     <header>
     <div id="containerTituloNombres">
-      <p class="tituloNombres pb-3">FyC</p>
+      <!-- <p class="tituloNombres pb-3">FyC</p> -->
     </div>
     <div class="div1"></div>
-    <img id="fotoPlaya" src="./img/FyC playa.jpg" alt="playa">
+    <img id="fotoPlaya" src="./img/Oksi-Guido-logo.jpg" alt="logo-Oksi-Guido">
     
     
       <div id="div2">
-        <a id="pFecha" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjM0dWt0bWEwZmdqb2gzbGE4NHZpY2xvbzMgZmVkZXJpY29hbnRvbmlvLm9yc2lAbQ&tmsrc=federicoantonio.orsi%40gmail.com"><strong>08.12.2022</strong></a>
+        <p id="pFecha"><strong>31/01/2023</strong></p>
+        <!-- <a class="info info-position" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjM0dWt0bWEwZmdqb2gzbGE4NHZpY2xvbzMgZmVkZXJpY29hbnRvbmlvLm9yc2lAbQ&tmsrc=federicoantonio.orsi%40gmail.com">AGENDAME</a> -->
         
       </div>
     
@@ -38,8 +40,8 @@
 
    <main>
      
-    
-     <div id="divCountDown">
+    <!-- Cuntdown con Position Absolute!! -->
+     <!-- <div id="divCountDown">
       <div id="divTiempoRestanteEnNumeros" class="d-flex gap-5 justify-content-center">
         <p id="countdownDias" class="estilosCountdown"></p>
         <p id="countdownHoras" class="estilosCountdown"></p>
@@ -48,39 +50,77 @@
       </div>
       <div id="divDiasHoras" class="d-flex gap-5 justify-content-center">
        <div>
-        <p id="pDias">Días</p>
+        <p id="pDias">días</p>
        </div>
-       <p>Horas</p>
-       <p>Min</p>
+       <p id="pHoras">h</p>
+       <p id="pMinutos">min</p>
        <div>
-        <p id="pSegundos">Seg</p>
+        <p id="pSegundos">s</p>
        </div>
       </div> 
-    </div>
+    </div> -->
+
+
+     <!-- Cuntdown con Flex direccion column!! -->
+    <div id="divCountDownC">
+      <!-- <div id="divTiempoRestanteEnNumeros" class="d-flex gap-5 justify-content-center"> -->
+        <div class="countDownFlexColumn">
+         <div>
+          <p id="countdownDias" class="estilosCountdown"></p>
+         </div>
+         <div>
+          <p id="pDias">días</p>
+         </div> 
+        </div>
+        <div class="countDownFlexColumn">
+          <p id="countdownHoras" class="estilosCountdown"></p>
+          <p id="pHoras">h</p>
+        </div>
+        
+        <div class="countDownFlexColumn">
+          
+          <p id="countdownMinutos" class="estilosCountdown"></p>
+          <p id="pMinutos">min</p>
+        </div>
+        
+        <div class="countDownFlexColumn">
+          <p id="countdownSegundos" class="estilosCountdown"></p>
+          <p id="pSegundos">s</p>
+        </div>
+      </div>
+      <!-- <div id="divDiasHoras" class="d-flex gap-5 justify-content-center"> -->
+       
+        
+       
+
+    
 
     <section id="seccionFiesta">
      <div id="divFiestaWhite"></div>
      <div id="divFiestaGray" class="text-center">
-      <p id="pFiesta">Fiesta</p>
-      <p id="pOrganizador"><strong>YATCH CLUB Buenos Aires</strong></p>
-      <p id="pHorario">18:00 Hs</p>
-      <a class="info" href="https://www.google.com.ar/maps/place/Yacht+Club+Puerto+Madero/@-34.6014694,-58.3775686,14.27z/data=!4m5!3m4!1s0x95a3352e8dc2bad5:0xfcd1559738b82a8a!8m2!3d-34.6020198!4d-58.3649219?hl=es-419" target="_blank">VER MAPA</a>
+      <p id="pFiesta"><i>Fiesta</i></p>
+      <p id="pOrganizador"><strong>Quinta el Tata</strong></p>
+      <p id="pHorario monserrat400">21:00 Hs</p>
+      <a class="info monserrat400" href="https://g.page/QuintaElTata?share" target="_blank">VER MAPA</a>
      </div>
-     <img id="yatchClubPic" src="https://static.wixstatic.com/media/eb4c45_8433b9e9d941450d8283252f18854523~mv2.jpg/v1/fill/w_640,h_748,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/eb4c45_8433b9e9d941450d8283252f18854523~mv2.jpg" alt="YatchClub">
+     <img id="yatchClubPic" src="./img/quinta.jpg" alt="QuintaElTata">
 
     </section> 
 
    <article id="articleFlor">
       <div id="divMuralFotos" class="text-center d-flex justify-content-center">
-      <p>DURANTE NUESTRA BODA UTILIZA EL HASHTAG</p>
-      <p id="pCamiYFede"><strong>#CAMIyFEDE</strong></p>
-      <a class="aMuralFotos" href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTU0NzU1MTU5OTcwMDMx?story_media_id=1732691349964850834_1465774300&igshid=YmMyMTA2M2Y=" target="_blank">VER MURAL FOTOS</a>
-      </div>
+      <!-- <p class="fWeight400">Durante nuestra boda usá el hashtag:</p>
+      <p id="pCamiYFede">#Oksi+Guido</p>
+      <a class="aMuralFotos fWeight400" href="" target="_blank">VER MURAL FOTOS</a> -->
+      <h5 id="h5Confirmacion">Confirmación</h5>
+      <p class="monserrat400">¡Tenemos muchas ganas de compartir este momento con vos! Te pedimos que completes este formulario cuanto antes para saber si contamos con tu presencia. La fecha límite es el 23/11/2022. El registro es individual, si venís acompañado/a por favor, registrá a todos los integrantes del grupo familiar que asistan.</p>
     
-
+    </div>
+    
+      
      <!-- Seccion Mesa de Regalos -->
 
-     <div id="divMesaDeRegalos" class="text-center text-light">
+     <!-- <div id="divMesaDeRegalos" class="text-center text-light">
       <h5 id="h5MesaRegalos">Mesa de Regalos</h5>
       <p class="fw-lighter">Como ya vivimos juntos, no necesitamos nada para nuestra casa. Si querés hacernos un regalo, que sea para la luna de miel. ¡Gracias!</p>
       <div id="divDatosBancarios" class="d-flex">
@@ -90,22 +130,24 @@
        </div> 
        <p id="cbu"></p>
      </div>
-     
+     -->
      <img id="imgFlor" width="443" height="690" src="https://siacepto.ar/wp-content/uploads/2022/03/planta-2.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://siacepto.ar/wp-content/uploads/2022/03/planta-2.png 443w, https://siacepto.ar/wp-content/uploads/2022/03/planta-2-193x300.png 193w" sizes="(max-width: 443px) 100vw, 443px">
-   </article>
+    </article>
+    
+
 
    <!-- Seccion Vestimenta -->
-   <section>
+   <!-- <section>
    <div id="divVestimenta" class="d-flex text-center justify-content-center">
     <p class="fs-2 text">CÓDIGO DE VESTIMENTA</p>
     <p id="pEleganteSport">ELEGANTE-SPORT</p>
-    <!-- Button trigger modal -->
+    Button trigger modal
     <button id="ejemploVestimenta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">VER EJEMPLO</button>
    </div>
 
    
-<!-- Modal Vestimenta-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+Modal Vestimenta-->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content text-center">
       <div class="modal-header">
@@ -115,8 +157,8 @@
       <div class="modal-body">
        <p>Esta denominación hace alusión a un <strong>estilo arreglado y cómodo a la vez.</strong></p>
        <p>Aquí te mostramos algunos ejemplos. Ponele onda a tu Look y juntos tengamos una <strong>Gran Fiesta!!!</strong></p>
-      </div>
-      <div class="d-flex justify-content-center gap-5 fs-Smaller-FO">
+      </div> -->
+      <!-- <div class="d-flex justify-content-center gap-5 fs-Smaller-FO">
         <p id="hombres" class="after"><strong>HOMBRES</strong></p>
         <p id="mujeres"><strong class="borderBottom-FO">MUJERES</strong></p>
       </div>
@@ -130,26 +172,26 @@
   </div>
 </div>
  
-</section> 
+</section>  -->
 <!-- Seccion Confirmacion -->
 
 <article class="posRelative-FO">
 <div id="divConfirmacion" class="text-center">
-  <h5 id="h5Confirmacion">Confirmación</h5>
-  <p>¡Tenemos muchas ganas de compartir este momento con vos! Te pedimos que completes este formulario cuanto antes para confirmar tu asistencia. La fecha límite es el 15 de octubre del 2022.</p>
+  
+  
   <!-- Formulario -->
   
-    <form id="formulario" action="https://formsubmit.co/federicoantonio.orsi@gmail.com" method="POST">
-    <input id="Nombre" type="text" name="name" style="width: 85%;" placeholder="Nombre" required class="text-center mb-2">
-    <input id="Apellido" type="text" name="name" style="width: 85%;" placeholder="Apellido" required class="text-center mb-2">
-    <input id="Email" type="email" name="email" style="width: 85%" placeholder="E-mail" required class="text-center mb-2">
-    <input type="number" id="Celular" style="width: 85%" placeholder="Celular" required class="text-center mb-2">
+    <form id="formulario" class="monserrat400" action="https://formsubmit.co/federicoantonio.orsi@gmail.com" method="POST">
+    <input id="Nombre" type="text" name="name" placeholder="Nombre" required class="text-center mb-2">
+    <input id="Apellido" type="text" name="name" style="width: 100%;" placeholder="Apellido" required class="text-center mb-2">
+    <input id="Email" type="email" name="email" style="width: 100%" placeholder="E-mail" required class="text-center mb-2">
+    <input type="number" id="Celular" style="width: 100%" placeholder="Celular" required class="text-center mb-2">
     <input type="hidden" name="_subject" value="Nueva Confirmación de Cami & Fede Form!!">
     <input type="hidden" name="_cc" value="camisolguerra@gmail.com">
     <select id="Edad" required="required" class="form-select mb-2" aria-label="Default select example">
       <option selected class="mb-2">Edad</option>
       <option  value="Adulto/a">Adulto/a</option>
-      <option  value="Niño/a">Niño/a</option>
+      <!-- <option  value="Niño/a">Niño/a</option> -->
       <option  value="Menor">Menor</option>
     </select>
     <select id="Menu" class="form-select mb-2" aria-label="Default select example" required>
@@ -160,6 +202,13 @@
       <option value="Menú Celíaco">Menú Celíaco</option>
       <option value="Intolerancia a la Lactosa">Intolerancia a la Lactosa</option>
     </select>
+    
+    <select id="Transporte" required="required" class="form-select mb-2" aria-label="Default select example">
+      <option selected class="mb-2">Transporte</option>
+      <option  value="Sí (ida y/o vuelta)">Sí (ida y/o vuelta)</option>
+      <option  value="No">No</option>
+    </select>
+
     <select id="Asistencia" class="form-select mb-2" aria-label="Default select example" required>
       <option selected class="mb-2">Asistencia</option>
       <option value="Asistiré">Asistiré</option>
@@ -167,7 +216,8 @@
       
     </select>
     <textarea name="mensaje" id="mensajeParaNovios" cols="27" rows="02" placeholder="Mensaje para los Novios" class="mb-2"></textarea>
-    <button id="botonSubmit" type="submit">Confirmar</button>
+    <button id="botonSubmit" type="submit">ENVIAR</button>
+    
 </form>
 </div>
 
@@ -177,8 +227,9 @@
     
 <!-- Seccion Te Esperamos -->
  <div id="divTeEsperamos" class="text-center">
-  <h5 id="h5TeEsperamos">Cami y Fede</h5>
-  <p class="whiteColor-FO">TE ESPERAMOS!!</p>
+  <!-- <h5 id="h5TeEsperamos">Cami y Fede</h5> -->
+  <img class="heart" src="./img/05_corazon-01.png" alt="corazon">
+  <p class="whiteColor-FO"><i>TE ESPERAMOS!!</i></p>
  </div>  
    
 
